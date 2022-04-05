@@ -1,0 +1,41 @@
+$main_colour: #281b0a;
+$theme_colour: #111109; /* levi */
+$font_backgroud_colour: #efe5cc;
+
+$body_colour: $theme_colour;
+$body_backgroud_colour: $font_backgroud_colour;
+$body_font_size: 15px;
+$sidebar_background_colour: $theme_colour;
+$scrollbar_colour: $main_colour;
+$scrollbar_thumb_colour: $body_backgroud_colour;
+$scrollbar_track_colour: $main_colour; /* old #299c69*/
+$header_text_shadow: 2px 4px 5px snow;
+$header_border_colour: #0a2c1f;
+$header_a_colour: $main_colour;
+$page_table_border: 1px solid $theme_colour;
+
+/* content */
+$content_code_background: $font_backgroud_colour;
+
+$code_webkit_box_shadow: inset 0 1px 10px rgba(182, 141, 158, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1);
+$code_moz_box_shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1);
+$code_box_shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1);
+
+$content_em_strong_text_shadow: 1px 1px 2px $main_colour;
+$content_em_strong_colour: $theme_colour;
+$content_strong_text_shadow: 0 0 2px $main_colour;
+$content_strong_colour: $theme_colour;
+
+/* block */
+$block_backgroud_colour: rgb(255, 242, 248);
+$block_colour: $main_colour;
+
+$ref_background: #121212;
+$tip_background: #454849;
+$tip_border_top_colour: #284750;
+$note_background: #454b5e;
+$note_border_top_colour: #070d1d;
+$info_background: #2b2520;
+$info_border_top_colour: #271200;
+$warn_background: #533f3f;
+$warn_border_top_colour: #270000;
