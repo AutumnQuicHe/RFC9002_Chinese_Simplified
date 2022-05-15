@@ -5,8 +5,6 @@ weight: 11060
 rank: "h2"
 ---
 
-This is invoked from ProcessECN and OnPacketsLost when a new congestion event is detected. If not already in recovery, this starts a recovery period and reduces the slow start threshold and congestion window immediately.
-
 该过程会在检测到新的拥塞事件时被`ProcessECN`和`OnPacketsLost `调用。如果此时并不处于恢复期，那么就会启动恢复期，立即降低慢启动阈值并且缩小拥塞窗口。
 
 {{% block_ref

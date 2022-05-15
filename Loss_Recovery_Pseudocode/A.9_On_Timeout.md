@@ -5,11 +5,7 @@ weight: 10090
 rank: "h2"
 ---
 
-When the loss detection timer expires, the timer's mode determines the action to be performed.
-
 当丢包检测计时器超时时，计时器的模式决定了需要采取的行动。
-
-Pseudocode for OnLossDetectionTimeout follows:
 
 `OnLossDetectionTimeout`的伪代码如下：
 

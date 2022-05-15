@@ -5,11 +5,7 @@ weight: 11050
 rank: "h2"
 ---
 
-This is invoked from loss detection's OnAckReceived and is supplied with the newly acked_packets from sent_packets.
-
 该过程会被丢包检测的`OnAckReceived`调用，并且会被传入在`sent_packets`中最新的已确认数据包（`acked_packets`）。
-
-In congestion avoidance, implementers that use an integer representation for congestion_window should be careful with division and can use the alternative approach suggested in Section 2.1 of [RFC3465].
 
 在拥塞回避状态下，为拥塞窗口尺寸使用整型来表达的实现者应该小心的进行除法操作，并且可以使用在《[RFC3465]()》的[第2.1章]()中建议的替代方案。
 

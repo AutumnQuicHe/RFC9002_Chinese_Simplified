@@ -5,8 +5,6 @@ weight: 11030
 rank: "h2"
 ---
 
-At the beginning of the connection, initialize the congestion control variables as follows:
-
 在连接的一开始，以这种方式初始化拥塞控制变量：
 
 {{% block_ref

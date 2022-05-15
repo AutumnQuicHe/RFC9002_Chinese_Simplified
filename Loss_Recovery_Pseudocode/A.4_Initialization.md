@@ -5,8 +5,6 @@ weight: 10040
 rank: "h2"
 ---
 
-At the beginning of the connection, initialize the loss detection variables as follows:
-
 在连接的一开始，以这种方式初始化丢包检测变量：
 
 {{% block_ref

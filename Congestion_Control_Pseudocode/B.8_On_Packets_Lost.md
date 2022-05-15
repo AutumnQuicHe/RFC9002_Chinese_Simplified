@@ -5,8 +5,6 @@ weight: 11080
 rank: "h2"
 ---
 
-This is invoked when DetectAndRemoveLostPackets deems packets lost.
-
 该过程会在`DetectAndRemoveLostPackets`将数据包认定为丢包时被调用。
 
 {{% block_ref

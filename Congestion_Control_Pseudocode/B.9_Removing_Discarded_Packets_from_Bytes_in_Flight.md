@@ -5,11 +5,7 @@ weight: 11090
 rank: "h2"
 ---
 
-When Initial or Handshake keys are discarded, packets sent in that space no longer count toward bytes in flight.
-
 当初始密钥或握手密钥被弃用时，在这些空间中发送的数据包不再被计入在途字节数中。
-
-Pseudocode for RemoveFromBytesInFlight follows:
 
 `RemoveFromBytesInFlight`的伪代码如下：
 
@@ -18,7 +14,7 @@ indx="Pseudocode_11_9_1" %}}
 
 ```
 RemoveFromBytesInFlight(discarded_packets):
-  // 从在途字节数中移除所有未得到确认的数据包
+  // 从在途字节数中移除所有未得到确认的数据包。
   foreach packet in discarded_packets:
     if packet.in_flight
       bytes_in_flight -= size

@@ -5,8 +5,6 @@ weight: 11070
 rank: "h2"
 ---
 
-This is invoked when an ACK frame with an ECN section is received from the peer.
-
 该过程会在从对端接收到具有ECN相关字段的**ACK帧**时被调用。
 
 {{% block_ref
@@ -14,7 +12,7 @@ indx="Pseudocode_11_7_1" %}}
 
 ```
 ProcessECN(ack, pn_space):
-  // 如果由对端报告的ECN-CE计数增加了，
+  // 如果由对端报告的`ECN-CE`计数增加了，
   // 那么这可能是一次新的拥塞事件。
   if (ack.ce_counter > ecn_ce_counters[pn_space]):
     ecn_ce_counters[pn_space] = ack.ce_counter

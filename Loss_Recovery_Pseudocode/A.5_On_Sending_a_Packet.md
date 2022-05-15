@@ -5,11 +5,7 @@ weight: 10050
 rank: "h2"
 ---
 
-After a packet is sent, information about the packet is stored. The parameters to OnPacketSent are described in detail above in Appendix A.1.1.
-
 在发送某个数据包后，有关该数据包的信息会被储存。`OnPacketSent`的参数已在上文的[附录A.1.1]()中描述。
-
-Pseudocode for OnPacketSent follows:
 
 `OnPacketSent`的伪代码如下：
 

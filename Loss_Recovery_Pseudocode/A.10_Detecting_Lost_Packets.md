@@ -5,11 +5,7 @@ weight: 10100
 rank: "h2"
 ---
 
-DetectAndRemoveLostPackets is called every time an ACK is received or the time threshold loss detection timer expires. This function operates on the sent_packets for that packet number space and returns a list of packets newly detected as lost.
-
 每次接收到**ACK帧**或时间阈值丢包检测计时器超时时，都会调用`DetectAndRemoveLostPackets`。该函数对响应数据包号空间中的已发送数据包（`sent_packets`）进行操作，并返回一份最新被认定为丢包的数据包的列表。
-
-Pseudocode for DetectAndRemoveLostPackets follows:
 
 `DetectAndRemoveLostPackets`的伪代码如下：
 

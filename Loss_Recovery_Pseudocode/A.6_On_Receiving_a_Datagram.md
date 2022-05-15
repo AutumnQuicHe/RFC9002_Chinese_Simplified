@@ -5,11 +5,7 @@ weight: 10060
 rank: "h2"
 ---
 
-When a server is blocked by anti-amplification limits, receiving a datagram unblocks it, even if none of the packets in the datagram are successfully processed. In such a case, the PTO timer will need to be rearmed.
-
-当服务器被抗放大上限阻止发送时，接收到的数据报能够为它解禁，即使该数据报中没有一个数据包成功得到处理。在这种情况下，需要重新设置PTO计时器。
-
-Pseudocode for OnDatagramReceived follows:
+当服务器被抗放大上限阻止发送时，接收到的数据报能够为它解除禁言，即使该数据报中没有一个数据包成功得到处理。在这种情况下，需要重新设置PTO计时器。
 
 `OnDatagramReceived`的伪代码如下：
 

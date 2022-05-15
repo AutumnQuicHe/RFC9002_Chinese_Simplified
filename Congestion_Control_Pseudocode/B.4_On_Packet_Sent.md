@@ -5,8 +5,6 @@ weight: 11040
 rank: "h2"
 ---
 
-Whenever a packet is sent and it contains non-ACK frames, the packet increases bytes_in_flight.
-
 只要被发送的数据包中包含非**ACK帧**，该数据包就会使得`bytes_in_flight`增长。
 
 {{% block_ref

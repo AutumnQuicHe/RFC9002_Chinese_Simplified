@@ -5,11 +5,7 @@ weight: 10070
 rank: "h2"
 ---
 
-When an ACK frame is received, it may newly acknowledge any number of packets.
-
 当接收到某**ACK帧**时，它可能新确认任意数量的数据包。
-
-Pseudocode for OnAckReceived and UpdateRtt follow:
 
 `OnAckReceived`和`UpdateRtt`的伪代码如下：
 

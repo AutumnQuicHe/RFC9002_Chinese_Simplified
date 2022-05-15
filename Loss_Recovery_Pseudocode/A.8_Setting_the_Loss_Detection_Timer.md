@@ -5,15 +5,9 @@ weight: 10080
 rank: "h2"
 ---
 
-QUIC loss detection uses a single timer for all timeout loss detection. The duration of the timer is based on the timer's mode, which is set in the packet and timer events further below. The function SetLossDetectionTimer defined below shows how the single timer is set.
-
 QUIC的丢包检测使用一个计时器来检测所有超时事件，计时器的时长取决于计时器的模式，后者是在下文描述的数据包事件和计时器事件中指定的。下文定义的`SetLossDetectionTimer`展示了怎样设置这个计时器。
 
-This algorithm may result in the timer being set in the past, particularly if timers wake up late. Timers set in the past fire immediately.
-
 本算法可能导致计时器被设置到一个过去的时间，尤其是计时器没有被及时唤醒时。被设置到过去的时间的计时器会立即超时。
-
-Pseudocode for SetLossDetectionTimer follows (where the "^" operator represents exponentiation):
 
 `SetLossDetectionTimer`的伪代码如下（其中`^`符号表示幂运算）：
 
@@ -59,7 +53,7 @@ GetPtoTimeAndSpace():
   return pto_timeout, pto_space
 
 PeerCompletedAddressValidation():
-  // 假定客户端已隐式地验证了服务器的地址
+  // 假定客户端已隐式地验证了服务器的地址。
   if (终端是服务器):
     return true
   // 当接收到受保护的数据包时，
