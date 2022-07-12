@@ -10,7 +10,6 @@ rank: "h2"
 {{< block_img
 indx="Figure_1_Congestion_Control_States_and_Transitions"
 title="图1：拥塞控制的各种状态及其转变"
-type="svg"
-src="/RFC9000_Chinese_Translation/images/Figure_2_States_for_Sending_Parts_of_Streams.svg" >}}
+src="/RFC9002_Chinese_Translation/images/Figure_1_Congestion_Control_States_and_Transitions.svg" >}}
 
 后续章节描述了这些状态及其转变。
