@@ -13,15 +13,15 @@ rank: "h2"
 
 `smoothed_rtt`：
 
-:   当前连接的经平滑的RTT，有关计算方法详见[第5.3章]()。
+:   当前连接的经平滑的RTT，有关计算方法详见[第5.3章](#5.3_Estimating_smoothed_rtt_and_rttvar)。
 
 `rttvar`：
 
-:   RTT的偏差，有关计算方法详见[第5.3章]()。
+:   RTT的偏差，有关计算方法详见[第5.3章](#5.3_Estimating_smoothed_rtt_and_rttvar)。
 
 `min_rtt`：
 
-:   在一段时间内观测到的RTT最小值，并忽略确认延迟，详见[第5.2章]()。
+:   在一段时间内观测到的RTT最小值，并忽略确认延迟，详见[第5.2章](#5.2_Estimating_min_rtt)。
 
 `first_rtt_sample`：
 
@@ -29,7 +29,7 @@ rank: "h2"
 
 `max_ack_delay`：
 
-:   接收方有意拖延对处于应用数据数据包号空间中的数据包的确认的最长时间，其定义与同名传输参数一致（详见《[QUIC传输]()》的[第18.2章]()）。注意在接收到的**ACK帧**中的实际`ack_delay`可能会因为计时器延迟、数据包乱序或丢包的原因而超过该值。
+:   接收方有意拖延对处于应用数据数据包号空间中的数据包的确认的最长时间，其定义与同名传输参数一致（详见《[QUIC传输](../RFC9000_Chinese_Translation)》的[第18.2章](../RFC9000_Chinese_Translation/#18.2_Transport_Parameter_Definitions)）。注意在接收到的**ACK帧**中的实际`ack_delay`可能会因为计时器延迟、数据包乱序或丢包的原因而超过该值。
 
 `loss_detection_timer`：
 
@@ -53,4 +53,4 @@ rank: "h2"
 
 `sent_packets[kPacketNumberSpace]`：
 
-:   该数据包号空间中数据包号与其对应的数据包信息之间的关联。在上文的[附录A.1]()中已详细描述。
+:   该数据包号空间中数据包号与其对应的数据包信息之间的关联。在上文的[附录A.1](#A.1_Tracking_Sent_Packets)中已详细描述。

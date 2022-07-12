@@ -5,7 +5,7 @@ weight: 10050
 rank: "h2"
 ---
 
-在发送某个数据包后，有关该数据包的信息会被储存。`OnPacketSent`的参数已在上文的[附录A.1.1]()中描述。
+在发送某个数据包后，有关该数据包的信息会被储存。`OnPacketSent`的参数已在上文的[附录A.1.1](#A.1.1_Sent_Packet_Fields)中描述。
 
 `OnPacketSent`的伪代码如下：
 

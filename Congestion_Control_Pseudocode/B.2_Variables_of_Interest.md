@@ -9,7 +9,7 @@ rank: "h2"
 
 `max_datagram_size`：
 
-:   发送方当前的最大载荷尺寸。其中不包含UDP或IP头部。最大的数据包尺寸会被用于计算拥塞窗口。终端基于其路径最大传输单元（PMTU；详见《[QUIC传输]()》的[第14.2章]()）来设置该值，且不会低于1200字节。
+:   发送方当前的最大载荷尺寸。其中不包含UDP或IP头部。最大的数据包尺寸会被用于计算拥塞窗口。终端基于其路径最大传输单元（PMTU；详见《[QUIC传输](../RFC9000_Chinese_Translation)》的[第14.2章](../RFC9000_Chinese_Translation/#14.2_Path_Maximum_Transmission_Unit)）来设置该值，且不会低于1200字节。
 
 `ecn_ce_counters[kPacketNumberSpace]`：
 

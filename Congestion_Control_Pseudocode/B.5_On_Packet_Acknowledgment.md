@@ -7,7 +7,7 @@ rank: "h2"
 
 该过程会被丢包检测的`OnAckReceived`调用，并且会被传入在`sent_packets`中最新的已确认数据包（`acked_packets`）。
 
-在拥塞回避状态下，为拥塞窗口尺寸使用整型来表达的实现者应该小心的进行除法操作，并且可以使用在《[RFC3465]()》的[第2.1章]()中建议的替代方案。
+在拥塞回避状态下，为拥塞窗口尺寸使用整型来表达的实现者应该小心的进行除法操作，并且可以使用在《[RFC3465](https://www.rfc-editor.org/info/rfc3465)》的[第2.1章](https://www.rfc-editor.org/rfc/rfc3465.html#section-2.1)中建议的替代方案。
 
 {{% block_ref
 indx="Pseudocode_11_5_1" %}}
