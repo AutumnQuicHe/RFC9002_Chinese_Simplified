@@ -14,7 +14,7 @@ $scrollbar_track_colour: $main_colour; /* old #299c69*/
 $header_text_shadow: 2px 4px 5px snow;
 $header_border_colour: #0a2c1f;
 $header_a_colour: $main_colour;
-$page_table_border: 1px solid $theme_colour;
+$page_table_border: 1px solid $main_colour;
 
 /* content */
 $content_code_background: $font_backgroud_colour;
@@ -36,11 +36,9 @@ $ref_background: $theme_colour;
 $ref_colour: snow;
 $ref_code_colour: $ref_colour;
 $ref_code_webkit_box_shadow: inset 0 1px 10px rgba(224, 220, 220, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1);
-$tip_background: #454849;
-$tip_border_top_colour: #284750;
-$note_background: #454b5e;
-$note_border_top_colour: #070d1d;
-$info_background: #2b2520;
-$info_border_top_colour: #271200;
-$warn_background: #533f3f;
-$warn_border_top_colour: #270000;
+$ref_table_border: 1px solid snow;
+
+$tip_background: rgb(156, 212, 231);
+$note_background: #a0b2ec;
+$info_background: #f3b07a;
+$warn_background: #dd9b9b;
