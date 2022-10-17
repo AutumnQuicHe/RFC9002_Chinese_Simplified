@@ -13,7 +13,7 @@ QUIC为拥塞控制提供一些通用的信号，它们被设计为能够支持�
 
 与TCP类似，仅包含**ACK帧**的数据包不会被计入在途字节计数，也不会受到拥塞控制。与TCP不一样的是，QUIC能够检测到这些数据包的丢包情况，并且{{< req_level MAY >}}使用此信息来调整拥塞控制器或调整仅包含**ACK帧**的数据包的发送速率，但本文档中并没有描述如何进行此过程。
 
-如《[QUIC传输](../RFC9000_Chinese_Translation)》的[第9.4章](../RFC9000_Chinese_Translation/#9.4_Loss_Detection_and_Congestion_Control)所述，每条路径上的拥塞控制器是独立的，所以在其他路径上发送的数据包不会影响当前路径上的拥塞控制器。
+如《[QUIC传输](../RFC9000_Chinese_Simplified)》的[第9.4章](../RFC9000_Chinese_Simplified/#9.4_Loss_Detection_and_Congestion_Control)所述，每条路径上的拥塞控制器是独立的，所以在其他路径上发送的数据包不会影响当前路径上的拥塞控制器。
 
 本文档中的算法以字节为单位指定和使用控制器的拥塞窗口。
 

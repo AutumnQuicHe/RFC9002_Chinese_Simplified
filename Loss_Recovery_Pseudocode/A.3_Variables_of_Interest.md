@@ -29,7 +29,7 @@ rank: "h2"
 
 `max_ack_delay`：
 
-:   接收方有意拖延对处于应用数据数据包号空间中的数据包的确认的最长时间，其定义与同名传输参数一致（详见《[QUIC传输](../RFC9000_Chinese_Translation)》的[第18.2章](../RFC9000_Chinese_Translation/#18.2_Transport_Parameter_Definitions)）。注意在接收到的**ACK帧**中的实际`ack_delay`可能会因为计时器延迟、数据包乱序或丢包的原因而超过该值。
+:   接收方有意拖延对处于应用数据数据包号空间中的数据包的确认的最长时间，其定义与同名传输参数一致（详见《[QUIC传输](../RFC9000_Chinese_Simplified)》的[第18.2章](../RFC9000_Chinese_Simplified/#18.2_Transport_Parameter_Definitions)）。注意在接收到的**ACK帧**中的实际`ack_delay`可能会因为计时器延迟、数据包乱序或丢包的原因而超过该值。
 
 `loss_detection_timer`：
 
